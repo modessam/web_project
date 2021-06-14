@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ferox vehicles</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myScript.js"></script>
+    <style>
+        body {
+            background-image: url('bc.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        
+        .cform {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10vh;
+        }
+        
+        #pass,
+        #email,
+        #phone,
+        #address,
+        #txtarea,
+        #first,
+        #last {
+            width: 100%;
+            padding: 10px;
+            border: transparent;
+            background-color: transparent;
+            color: white;
+        }
+        
+        #pass::placeholder,
+        #email::placeholder,
+        #phone::placeholder,
+        #address::placeholder,
+        #txtarea::placeholder,
+        #first::placeholder,
+        #last::placeholder {
+            opacity: 0.9;
+            color: silver;
+        }
+        
+        label {
+            font-size: 23px;
+        }
+        
+        .full {
+            border-bottom: 1px solid white;
+            padding: 10px;
+        }
+        
+        table {
+            width: 40vw;
+        }
+        
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+        
+        #submit,
+        #reset {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"><img src="logo 4.png" alt="logo" style="width: 70px;height:auto;"></div>
+        <div class="menu">
+            <a href="index.html" class="ac">home</a>
+            <a href="companies.html">top companies</a>
+            <a href="advanced.html">advanced vehicles</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="dropdown-menu">
+            <div class="drop-img">
+                <img src="menu2.jpg" alt="menu" style="width: 70px;height:auto; padding-top: 10px;">
+            </div>
+            <div class="dropdown-content">
+                <a href="index.html">home</a>
+                <a href="companies.html">top companies</a>
+                <a href="advanced.html">advanced vehicles</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+                <div class="footer">
+                    <div class="social">
+                        <img src="iconfinder_5282541_fb_social media_facebook_facebook logo_social network_icon_64px.png" alt="facebook-Icon">
+                        <img src="iconfinder_5282551_tweet_twitter_twitter logo_icon_64px.png" alt="twitter-Icon">
+                        <img src="iconfinder_5282544_camera_instagram_social media_social network_instagram logo_icon_64px.png" alt="instagram-Icon">
+                        <img src="iconfinder_5282546_chat_facebook_message_messenger_messenger logo_icon_64px.png" alt="massenger-Icon">
+                        <img src="iconfinder_5282549_call_chat_mobile_whatsapp_whatsapp logo_icon_64px.png" alt="whatsapp-Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cform">
+        <h1 style="color:silver;">get in touch with us</h1>
+        <form id="contactForm" action="hi.html" method="GET">
+            <div>
+                <table>
+                    <tr>
+                        <td class="full"><input type="text" placeholder="name first" id="first" autocomplete="off"></td>
+                        <td class="full"><input type="text" placeholder="last name" id="last" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="full"><input type="email" placeholder="e-mail" id="email" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="full"><input type="password" placeholder="password" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="full"><input type="number" placeholder="phone number" id="phone" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="full"><input type="text" placeholder="address..................(optional)" id="address"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><textarea name="massage" id="txtarea" cols="30" rows="10" placeholder="your massage.........(optional)"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="male">male</label>
+                            <input type="radio" id="male" name="gender" />
+
+                            <label for="female">female</label>
+                            <input type="radio" id="female" name="gender" />
+                        </td>
+                        <td style="padding-top: 3vmax;">
+                            <input type="reset" id="reset" />
+                            <input type="submit" name="submit" value="submit" id="submit" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
